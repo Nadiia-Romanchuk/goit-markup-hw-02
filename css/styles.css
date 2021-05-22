@@ -1,10 +1,16 @@
 :root {
   --accent-color: #2196f3;
   --main-font: "Roboto", sans-serif;
+  --title-color: black;
+  --text-color: #757575;
+  --hero-title-color: white;
+  --hero-background-color: #2f303a;
+  --portfolio-btn-color: #212121;
+  --portfolio-btn-bakground: #f5f4fa;
 }
 body {
   font-family: var(--main-font);
-  color: black;
+  color: var(--title-color);
   line-height: 1;
 }
 
@@ -19,14 +25,21 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 36px;
+  color: var(--accent-color);
 }
-
+.footer-studio {
+  color: var(--hero-title-color);
+}
+.heder-studio {
+  color: var(--hero-background-color);
+}
 .tel-link {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
 }
 .menu-link {
+  color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -42,7 +55,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   background-color: var(--accent-color);
-  color: white;
+  color: var(--hero-title-color);
   cursor: pointer;
 }
 /* HERO */
@@ -55,9 +68,8 @@ body {
   font-size: 44px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: white;
+  color: var(--hero-title-color);
 }
-
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -70,6 +82,7 @@ body {
 .description {
   font-size: 14px;
   font-weight: 400;
+  color: #757575;
 }
 .team-suptitle {
   font-weight: 500;
@@ -80,6 +93,28 @@ body {
   font-weight: 400;
   color: #757575;
 }
+.hero-background {
+  background-color: var(--hero-background-color);
+}
+.footer {
+  background-color: var(--hero-background-color);
+}
+.footer-link {
+  color: var(--hero-title-color);
+}
+.contacts {
+  color: #ffffff99;
+}
 address {
   font-style: normal;
+  line-height: 1.5;
+}
+.portfolio-btn {
+  color: var(--portfolio-btn-color);
+  background-color: var(--portfolio-btn-bakground);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
 }
